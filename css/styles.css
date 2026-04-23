@@ -4,23 +4,14 @@
   box-sizing: border-box;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .hero {
-  position: relative;
+  padding: 1rem;
   height: 100vh;
   background: url(./mzae-2.jpg) no-repeat center/cover;
 }
 
 .text-flex {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  top: 450px;
-  left: 170px;
-  gap: 0;
+  text-align: center;
 }
 
 .hero h3 {
