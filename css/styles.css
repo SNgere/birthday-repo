@@ -8,14 +8,20 @@ body {
 }
 
 .hero {
+  border: 1px solid #f7d58a;
+  margin: 2%;
   position: relative;
   background: url(./mzae-2.jpg) no-repeat center/cover;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
 
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
+  border-radius: inherit;
   background:
     radial-gradient(
       circle at center top,
@@ -33,13 +39,12 @@ body {
 }
 
 .text-flex {
-  border: 0.5px solid #f7d58a;
   padding: 0.5rem;
   position: relative;
-  min-height: 100vh;
-  min-height: 100vh;
-  min-height: 100svh;
-  min-height: 100dvh;
+  min-height: 90vh;
+  min-height: 90vh;
+  min-height: 90svh;
+  min-height: 90dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,6 +62,34 @@ body {
   margin-bottom: 3rem;
 }
 
+.container-grid {
+  padding: 10px;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow:
+    rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.container-grid img {
+  max-width: 300px;
+  border-radius: 99px;
+}
+
+.container-grid .memory,
+.improve,
+.verse {
+  border: 1px solid #f7d58a;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+
 @media (max-width: 768px) {
   .hero {
     background: url(./mzae-mobile.jpg) no-repeat center/cover;
@@ -64,10 +97,6 @@ body {
 
   .text-flex {
     margin: 0 1rem;
-  }
-
-  .hero::before {
-    /* background: rgba(0, 0, 0, 0.27); */
   }
 
   .text-flex h1 {
