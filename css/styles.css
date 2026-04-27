@@ -57,10 +57,16 @@ body {
 .text-flex h1 {
   font-family: "Tangerine";
   font-size: 6rem;
-  color: #f7d58a;
+  color: #f1c566;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
   margin-top: 10rem;
   margin-bottom: 2rem;
+}
+
+.text-flex h4 {
+  font-family: "Tangerine";
+  font-size: 30px;
+  color: #ca9014;
 }
 
 .container {
