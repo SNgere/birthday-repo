@@ -5,60 +5,54 @@
 }
 
 body {
-  margin: 0.13rem;
-  padding: 0.13rem;
-  overflow: hidden;
 }
+
 .hero {
-  border: 1px solid rgb(255, 30, 0);
-  min-height: 100vh;
-  min-height: 100svh;
-  min-height: 100dvh;
+  position: relative;
   background: url(./mzae-2.jpg) no-repeat center/cover;
-  border-radius: 10px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .text-flex {
-  text-align: center;
-  top: 20px;
-}
-
-.hero h3 {
-  font-family: "Lavishly Yours", cursive;
-  color: #0b1d3a;
-  font-size: 6rem;
-  font-weight: 1000;
-  letter-spacing: 6px;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
-  margin-bottom: 5px;
-}
-
-.hero h4 {
-  display: inline-block;
-  padding: 0.3rem 0.6543rem;
-  font-family: "Poppins";
-  font-size: 0.7rem;
-  background-color: rgba(98, 220, 236, 0.205);
-  border-radius: 15px;
-}
-
-.hero p {
-  width: fit-content;
-  font-family: "Caveat", sans-serif;
-  font-size: 1.7rem;
-  font-weight: 700;
   position: relative;
-  top: 250px;
-  left: 230px;
-  transform: rotate(-30deg);
+  min-height: 100vh;
+  min-height: 100vh;
+  min-height: 100svh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.text-flex h1 {
+  font-family: "Lavishly Yours";
+  font-size: 7rem;
+  margin-top: 12rem;
+  margin-bottom: 3rem;
 }
 
 @media (max-width: 768px) {
   .hero {
-    background: url(./mzae-mobile.jpg) no-repeat 49% center/cover;
+    background: url(./mzae-mobile.jpg) no-repeat center/cover;
   }
-  .hero h3 {
-    font-size: 2rem;
-    text-shadow: 0 2px 6px rgb(255, 255, 255);
+
+  .hero::before {
+    background: rgba(0, 0, 0, 0.27);
+  }
+
+  .text-flex h1 {
+    font-size: 5rem;
   }
 }
