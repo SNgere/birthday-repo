@@ -117,6 +117,7 @@ body {
 .mantra,
 .improve,
 .verse {
+  width: 100%;
   padding: 0.6rem;
   border: 1px solid #ecdcc0;
   border-left: 0.9px solid #3a2b1a;
