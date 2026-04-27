@@ -48,7 +48,6 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 90vh;
-  min-height: 90vh;
   min-height: 90svh;
   min-height: 90dvh;
   text-align: center;
@@ -68,11 +67,6 @@ body {
   font-family: "Tangerine";
   font-size: 30px;
   color: #ca9014;
-}
-
-.cloud {
-  color: red;
-  font-size: 70px;
 }
 
 .container {
