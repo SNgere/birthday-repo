@@ -1,7 +1,7 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -9,11 +9,11 @@ body {
 }
 
 .hero {
-  border: 1px solid rgba(247, 213, 138, 0.78);
   position: relative;
-  background: url(./mzae-2.jpg) no-repeat center/cover;
   overflow: hidden;
+  border: 1px solid #3a2b1a;
   border-radius: 10px;
+  background: url(./mzae-2.jpg) no-repeat center/cover;
   box-shadow:
     inset 0 0 0 1px rgba(255, 245, 206, 0.38),
     0 0 0 1px rgba(140, 100, 24, 0.2),
@@ -43,25 +43,25 @@ body {
 
 .text-flex {
   position: relative;
-  min-height: 90vh;
-  min-height: 90vh;
-  min-height: 90svh;
-  min-height: 90dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
+  min-height: 90vh;
+  min-height: 90vh;
+  min-height: 90svh;
+  min-height: 90dvh;
   text-align: center;
+  color: white;
 }
 
 .text-flex h1 {
+  margin-top: 10rem;
+  margin-bottom: 2rem;
   font-family: "Tangerine";
   font-size: 6rem;
   color: #f1c566;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-  margin-top: 10rem;
-  margin-bottom: 2rem;
 }
 
 .text-flex h4 {
@@ -71,23 +71,20 @@ body {
 }
 
 .cloud {
-  font-size: 70px;
   color: red;
+  font-size: 70px;
 }
 
 .container {
   margin-top: 1rem;
-  border: 1px solid #e7cf9c;
   padding: 20px 10px 10px;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
   text-align: center;
-  box-shadow:
-    0 20px 50px rgba(42, 25, 8, 0.16),
-    0 1px 0 rgba(255, 255, 255, 0.75) inset;
+  border: 1px solid #e7cf9c;
   border-radius: 10px;
   background:
     radial-gradient(
@@ -96,25 +93,28 @@ body {
       rgba(255, 255, 255, 0) 60%
     ),
     linear-gradient(145deg, #fffdf8 0%, #fff6e3 100%);
+  box-shadow:
+    0 20px 50px rgba(42, 25, 8, 0.16),
+    0 1px 0 rgba(255, 255, 255, 0.75) inset;
 }
 
 .container .img {
-  margin-bottom: 10px;
   width: 180px;
   aspect-ratio: 1;
-  border-radius: 50%;
-  border: 3px solid #f7d58a;
+  margin-bottom: 10px;
   overflow: hidden;
+  border: 3px solid #f7d58a;
+  border-radius: 50%;
   box-shadow:
     inset 0 0 0 1px rgba(255, 245, 206, 0.45),
     0 8px 20px rgba(0, 0, 0, 0.26);
 }
 
 .container .img img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
   border-radius: inherit;
 }
 
@@ -122,24 +122,23 @@ body {
 .mantra,
 .improve,
 .verse {
+  padding: 0.6rem;
+  border: 1px solid #ecdcc0;
+  border-left: 0.9px solid #3a2b1a;
+  border-radius: 10px;
   font-family: "Poppins", sans-serif;
   font-size: 0.7rem;
-  border: 1px solid #ecdcc0;
-  border-radius: 10px;
-  padding: 0.6rem;
-  background: rgba(255, 255, 255, 0.86);
-  box-shadow: 0 6px 18px rgba(93, 63, 17, 0.08);
   line-height: 1.7;
   color: #3a2b1a;
-  /* border-right: 0.75px solid #3a2b1a; */
-  border-left: 0.9px solid #3a2b1a;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 6px 18px rgba(93, 63, 17, 0.08);
 }
 
 .title {
-  color: #8b5315;
-  font-weight: 600;
-  font-size: 0.8rem;
   margin-bottom: 0.4rem;
+  color: #8b5315;
+  font-size: 0.8rem;
+  font-weight: 600;
   letter-spacing: 0.03rem;
 }
 
